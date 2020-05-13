@@ -100,6 +100,7 @@ void spiralprint(int a[1000][1000],int m, int n){
     spiralprint(a,m,n);
 }
 */
+// rotate image interview question(normal iteration , USING STL function)
 #include <iostream>
 #include<algorithm>
 using namespace std;
