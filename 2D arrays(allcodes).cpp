@@ -218,6 +218,61 @@ int main() {
     spiralprint(a,m,n);
 	cout<<"END";
 }
+// piyush and magical park
+#include <iostream>
+using namespace std;
+void magical_park(char a[][100], int m, int n, int k, int s){
+    bool success=true;
+    for(int i=0;i<m;i++){
+        for (int j=0;j<n;j++){
+            char ch=a[i][j];
+            //check if strenth is less than threshold strength
+            if(s< k){
+                success=false;
+                break;
+            }
+            if(ch=='*'){
+                s+=5;
+            }
+            else if(ch=='.'){
+                s-=2;
+            }
+            else{
+                break;
+            }//we lose 1 when moving right except for last colm
+            if(j!=n-1){
+                s--;
+            }
+        }
+    }
+    //means the condition inside if is true
+    if(success){
+        cout<<"Yes"<<endl;
+        cout<<s<<endl;
+    }
+    else{
+        cout<<"No"<<endl;
+    }
+
+}
+int main() {
+    //row wise traversal of array
+    char park[100][100];// initializing it with all zeros
+    int m,n,k,s;
+    // m is row and n is colm
+    cin>> m >> n >> k >> s;
+    for (int row=0;row<m;row++){
+        for(int col=0;col<n;col++){
+            cin>> park[row][col];
+            
+        }
+    }
+    magical_park(park,m,n,k,s);
+    return 0;
+    
+
+
+}
 
 
 
