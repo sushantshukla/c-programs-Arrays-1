@@ -269,10 +269,42 @@ int main() {
     }
     magical_park(park,m,n,k,s);
     return 0;
-    
-
-
+  }
+#include <iostream>
+using namespace std;
+int main() {
+    //this will have 4 rows and 10 no of col
+    //updating a bucket in char
+    char[10][10];
+    c[0][0]='A';
+    char b[][100]={{'a','b','c','\0'},{'d','e','f','\0'}};
+    char a[50][100]={"abc","def","ghi","hello"};
+    cout<<b[0][2]<<endl;
+    cout<<b[1]<<endl;
+    cout<<a[2]<<endl;
+    cout<<a[3]<<endl;
+    return 0;
 }
+#include <iostream>
+using namespace std;
+int main() {
+    //read list of strings and store them in 2D array
+    char  a[100][1000];
+    int n;
+    cin >>n;
+    cin.get();
+    for(int i=0;i<n;i++){
+        cin.getline(a[i],1000);
+
+    }
+    //print out all the strings
+    for (int j=0;j<n;j++){
+        cout<<a[j]<<endl;
+    }
+    return 0;
+}
+
+
 
 
 
