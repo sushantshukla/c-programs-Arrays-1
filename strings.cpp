@@ -88,9 +88,30 @@ int main() {
     }
      cout<< largest<<" and "<< largest_len<<endl;
     return 0;
+}
 
+//lOWECASE UPPERCASE SPECIAL CHARACTER USING ASCII CODE QUESTION
+#include<iostream>
+using namespace std;
 
-    
+using namespace std;
+int main() {
+char ch1;
+cin>>ch1;
+int ch;
+ch=int(ch1);
+//ASCII value of uppercase is 65 to 90 A-Z
+if(ch<=90&&ch>=65){
+cout<<"UPPERCASE";
+}
+//ascii value of lowercase is 97 to 122 a-z
+else if(ch<=122&&ch>=97){
+cout<<"lowercase";
+}
+else {
+cout<<"Invalid";
+}
+return 0;
 }
 
 
