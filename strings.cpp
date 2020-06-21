@@ -113,6 +113,11 @@ cout<<"Invalid";
 }
 return 0;
 }
+//most frequent character
+// count[str[i]]++
+// means for character at str[i] its frequency is incremented by 1. The array will expect its index to be an integer but you may think that str[i] is a character. Yes str[i] is a character but in count[str[i]]++ compiler will treat str[i] with its ascii value which is an integer(which ranges from 0-255).
+// So if str[i]==‘a’. Knowing that acii value of ‘a’ is 97.
+// count[str[i]]++ will actually be count[97]++
 #include<bits/stdc++.h>
 using namespace std;
 void count(string str)
