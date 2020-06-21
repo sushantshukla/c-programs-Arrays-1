@@ -113,5 +113,28 @@ cout<<"Invalid";
 }
 return 0;
 }
+#include<bits/stdc++.h>
+using namespace std;
+void count(string str)
+{ int n=0;
+  char max;
+  int count[256]={0};
+  for(int i=0;i<str.size();i++)
+  {
+     count[str[i]]++;
+    if (count[str[i]]>n) { 
+            n= count[str[i]]; 
+            max = str[i]; 
+        } 
+  }
+  cout<<max<<endl;
+}
+int main() {
+  string str;
+  cin>>str;
+  count(str);
+	return 0;
+}
+
 
 
