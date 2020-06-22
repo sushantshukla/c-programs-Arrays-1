@@ -140,6 +140,34 @@ int main() {
   count(str);
 	return 0;
 }
+#include<iostream>
+#include<string>
+using namespace std;
+int main() 
+{
+	string S;
+	getline(cin,S);
+	int len=S.length();
+	int i=0;
+	for(int i=0;i<len+1;i++)
+	{
+	    if(i==0 && S[i]>='A' && S[i]<='Z')
+	    {
+	        cout<<S[i];
+	    }//if the letter tis in small directly print the output
+	    else if(S[i]>='a'&& S[i]<='z')
+	    {
+	        cout<<S[i];
+	    }//if the letter is in cap than print a line than print the output .
+	    else if(S[i]>='A' && S[i]<='Z')
+	    {
+	        cout<<endl;
+	        cout<<S[i];
+	    }
+	}
+	return 0;
+}
+
 
 
 
