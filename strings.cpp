@@ -167,6 +167,43 @@ int main()
 	}
 	return 0;
 }
+//is pallindrome
+#include<cstring>
+using namespace std;
+bool ispallidrome(int a[1000],int i,int j){
+	if(i>=j){
+		return true;
+	}
+	
+    if(a[i]!=a[j]){
+		return false;
+		
+	}
+	return ispallidrome(a,i+1,j-1);
+	
+	
+//loop terminate
+}
+int main() {
+    //palindrome check
+    int n;
+	cin>>n;
+	int a[1000];
+   // readline(a,1000);
+   for(int i=0;i<n;i++){
+    cin>>a[i];
+   }
+   int i=0;
+	int j=n-1;
+    if(ispallidrome(a,i,j)){
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+    }
+   
+    return 0;
+}
 
 
 
