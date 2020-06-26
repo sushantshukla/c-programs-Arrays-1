@@ -230,6 +230,22 @@ while(arr[i]!='\0')
 cout<<ch<<count;
 	return 0;
 }
+//strings difference in Ascii codes
+#include <iostream>
+using namespace std;
+int main() 
+{
+   string str;
+cin>>str;
+
+for(int i=0;i<str.length()-1;i++)
+{
+	//substraction of str[i+1]-str[i] gives the substractio of ascii characters
+    cout<<str[i]<<str[i+1]-str[i];  
+}
+cout<<str[str.length()-1];
+return 0;
+}
 
 
 
