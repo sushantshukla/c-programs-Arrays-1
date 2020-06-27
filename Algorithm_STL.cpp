@@ -82,6 +82,9 @@ int main() {
     
    return 0;
 }
+
+
+//Next permutation concept videos
 #include <iostream>
 #include<algorithm>
 #include<vector>
@@ -113,10 +116,29 @@ int main() {
     for (int x : v) {
         cout << x << " ";
     }
+return 0;
+}
 
-
-
-
-    return 0;
+//Next Permutation Question
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	for (int i=0;i<t;i++){
+		int n;
+		cin>>n;
+   		int  arr[n];
+    	for(int i=0; i<n; i++){
+        cin>>arr[i];
+    	}
+		next_permutation(arr,arr+n);
+		for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    	}
+		cout<<endl;
+	}
+	return 0;
 }
 
